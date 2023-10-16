@@ -163,4 +163,7 @@ label span{
     width: 150px;
     gap: 10px !important;
   }
+  .cancel_save{
+    width: 92%;
+  }
 }
