@@ -21,7 +21,7 @@ function App() {
 
     console.log("Numéro de téléphone : " + number);
 
-    fetch("http://localhost:3000/card/login-card",{
+    fetch("https://universal-6223e2e8c152.herokuapp.com/card/login-card",{
     method: "POST",
     crossDomain: true,
     headers:{
