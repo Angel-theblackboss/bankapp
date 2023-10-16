@@ -142,3 +142,38 @@ label span{
     background-clip: border-box!important;
     background-origin: border-box!important;
 }
+
+@media screen and (max-width: 480px) {
+  .App{
+    padding: 0;
+  }
+  .content{
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .App{
+    padding: 30px;
+  }
+  .cardNumber input, .cardNumber textarea{
+    width: 85%;
+  }
+  .cardNumber select{
+    width: 90%;
+  }
+  .exp_cvv{
+    gap: 0;
+  }
+  
+  .exp_cvv .cardNumber input{
+    width: 70%;
+  }
+  .header{
+    width: 90%;
+  }
+  .cancel_save input{
+    width: 150px;
+    gap: 10px !important;
+  }
+}
