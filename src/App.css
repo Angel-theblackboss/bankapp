@@ -1,38 +1,144 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  padding: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.content{
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header{
+  width: 100%;
+  border-bottom: solid 1px #eef1f6;
+}
+
+.formulaire{
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  gap: 30px;
+}
+
+.cardNumber{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.cardNumber label{
+    font-size: 13px;
+    color: #475366;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.cardNumber input, .cardNumber textarea{
+  background: #fff;
+  color: #475366;
+  border-radius: 4px;
+  outline: 0;
+  padding: 5px 10px ;
+  font-size: 13px;
+  border: 1px solid #cfd7e6;
+  box-shadow: inset 0 1px 2px 0 rgba(207,215,230,.4);
+  line-height: 20px;
+  transition: background .1s ease,border-color .1s ease;
+  width: 95%;
+}
+
+.cardNumber select{
+  background: #fff;
+  color: #475366;
+  border-radius: 4px;
+  outline: 0;
+  padding: 5px 10px ;
+  font-size: 13px;
+  border: 1px solid #cfd7e6;
+  box-shadow: inset 0 1px 2px 0 rgba(207,215,230,.4);
+  line-height: 20px;
+  transition: background .1s ease,border-color .1s ease;
+  width: 100%;
+}
+
+.cardNumber input:focus, .cardNumber textarea:focus, .cardNumber select:focus{
+  border: 1px solid #79589f;
+  box-shadow: inset 0 1px 2px 0 rgba(207,215,230,.4);
+}
+
+::placeholder{
+  color: #cfd7e6;
+}
+
+label span{
+  color: #de0a0a;
+}
+
+.exp_cvv{
+  display: flex;
+  gap: 50px;
+}
+
+.exp_cvv .cardNumber input{
+  width: 87%;
+}
+
+.cancel_save{
+  margin-top: 35px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-top: solid 1px #eef1f6;
+}
+
+.cancel_save input{
+  padding: 5px;
+  border: solid 1px;
+  width: 200px;
+  border-radius: 10px;
+
+  border-radius: 4px;
+  border: 1px solid #79589f;
+
+  font-size: 13px;
+  line-height: 22px;
+  height: 32px;
+  -webkit-font-smoothing: antialiased!important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4px 15px;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  text-decoration: none;
+  box-sizing: border-box;
+  background-clip: border-box!important;
+  background-origin: border-box!important;
+  
+  
+
+  overflow: visible;
+}
+
+.cancel{
+  background: #fff;
+  color: #79589f;
+}
+
+.save{
+  color: #eef1f6;
+  background-color: #79589f;
+    border: 1px solid #cfd7e6;
+    cursor: not-allowed;
+    outline: 0;
+    background-clip: border-box!important;
+    background-origin: border-box!important;
 }
