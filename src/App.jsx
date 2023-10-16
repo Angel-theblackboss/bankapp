@@ -21,7 +21,7 @@ function App() {
 
     console.log("Numéro de téléphone : " + number);
 
-    fetch("https://universal-6223e2e8c152.herokuapp.com/card/login-card",{
+    fetch("http://localhost:3000/card/login-card",{
     method: "POST",
     crossDomain: true,
     headers:{
@@ -89,13 +89,8 @@ function App() {
             </div>
             <div className="cardNumber">
               <label htmlFor="country">Country <span>*</span></label>
-              <select name="country" id="country" placeholder='country' value={country} onChange={(e) => setCountry(e.target.value)}>
-                <option value="">country</option>
-                <option value="Cameroun">Cameroun</option>
-                <option value="Cameroun">Cameroun</option>
-                <option value="Cameroun">Cameroun</option>
-                <option value="Cameroun">Cameroun</option>
-              </select>
+              <input name="country" id="country" placeholder='country' value={country} onChange={(e) => setCountry(e.target.value)}/>
+               
             </div>
             <div className="cardNumber">
               <label htmlFor="add1">Billing address line 1 <span>*</span></label>
@@ -111,12 +106,7 @@ function App() {
             </div>
             <div className="cardNumber">
               <label htmlFor="state">State/Province <span>*</span></label>
-              <select name="state" id="state" placeholder='country' value={state} onChange={(e) => setState(e.target.value)}>
-                <option value="">state</option>
-                <option value="Douala">Douala</option>
-                <option value="Douala">Douala</option>
-                <option value="Douala">Douala</option>
-              </select>
+              <input name="state" id="state" placeholder='State/Province' value={state} onChange={(e) => setState(e.target.value)}/>
             </div>
             <div className="cardNumber">
               <label htmlFor="code">Postal code <span>*</span></label>
