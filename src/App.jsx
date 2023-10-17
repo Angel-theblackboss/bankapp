@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
+import Logo from "./global.jpg"
 
 function App() {
 
@@ -58,6 +59,10 @@ function App() {
   return (
     <div className="App">
       <div className="content">
+        <div className="logo_name">
+          <img src={Logo} alt="Global goods" />
+          <h1>Globals Goods</h1>
+        </div>
         <div className="header">
           <p>Enter Your Payment Information</p>
         </div>
